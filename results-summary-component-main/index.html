@@ -22,6 +22,7 @@
         font-size: 11px;
         text-align: center;
         margin-top: 15px;
+        display: none;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -29,25 +30,25 @@
     </style>
   </head>
   <body>
-    <!-- Here starts the top container with the main message. -->
-    <header class="heroheader">
-      <div class="header-container">
-        <div class="result">
-          <h1>Your Result</h1>
+    <div class="side-container">
+      <!-- Here starts the top container with the main message. -->
+      <header class="heroheader">
+        <div class="header-container">
+          <div class="result">
+            <h1>Your Result</h1>
+          </div>
+          <div class="roundedscore">
+            <div class="scorenumber"><span>76</span></div>
+            <p class="outof">of 100</p>
+          </div>
+          <h2 class="great">Great</h2>
+          <p class="youscored">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
         </div>
-        <div class="roundedscore">
-          <div class="scorenumber"><span>76</span></div>
-          <p class="outof">of 100</p>
-        </div>
-        <h2 class="great">Great</h2>
-        <p class="youscored">
-          You scored higher than 65% of the people who have taken these tests.
-        </p>
-      </div>
-    </header>
-    <!-- Here it finishes. -->
-    <!-- Here starts the second part of the page. Divided in another container. -->
-    <body>
+      </header>
+      <!-- Here it finishes. -->
+      <!-- Here starts the second part of the page. Divided in another container. -->
       <div class="summary">
         <h2 style="color: hsl(224, 30%, 27%)">Summary</h2>
         <ul>
@@ -80,9 +81,9 @@
             <p>72 <span>/ 100</span></p>
           </li>
         </ul>
+        <button type="button" class="continuebutton">Continue</button>
       </div>
-      <button type="button" class="continuebutton">Continue</button>
-    </body>
+    </div>
     <!-- Here it finishes. -->
     <div class="attribution">
       Challenge by

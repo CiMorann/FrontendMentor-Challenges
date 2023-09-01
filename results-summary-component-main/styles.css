@@ -177,5 +177,66 @@ ul li {
 }
 
 
+/* Responsive after Mobile First */
+
+@media only screen and (min-width: 1440px ) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .side-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+    }
+
+    /* Left-side container */
+
+    .header-container{
+        border-radius: 30px;
+        width: 350px;
+    }
+
+    .result {
+        margin: 30px;
+        opacity: 0.8;
+        font-size: 0.70rem;
+    }
+
+    .youscored {
+        text-align: center;
+        width: 65%;
+    }
+
+    .great {
+        margin-top: 25px;
+        font-size: 2rem;
+    }
+
+    .continuebutton {
+        width: 100%;
+    }
+
+    /* Right-side Container. */
+
+    ul {
+        margin-top: 20px;
+    }
+
+    .summary h2{
+        margin-bottom: 5px;
+    }
+    .summary {
+        margin: -20px;
+        padding: 30px;
+    }
+
+    .item-container {
+        margin-right: 80px;
+    }
 
 
+}
