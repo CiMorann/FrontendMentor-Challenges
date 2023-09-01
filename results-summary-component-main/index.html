@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="reset.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 15px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Here starts the top container with the main message. -->
+    <header class="heroheader">
+      <div class="header-container">
+        <div class="result">
+          <h1>Your Result</h1>
+        </div>
+        <div class="roundedscore">
+          <div class="scorenumber"><span>76</span></div>
+          <p class="outof">of 100</p>
+        </div>
+        <h2 class="great">Great</h2>
+        <p class="youscored">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+    </header>
+    <!-- Here it finishes. -->
+    <!-- Here starts the second part of the page. Divided in another container. -->
+    <body>
+      <div class="summary">
+        <h2 style="color: hsl(224, 30%, 27%)">Summary</h2>
+        <ul>
+          <li class="reaction-item">
+            <div class="item-container">
+              <img src="/assets/images/icon-reaction.svg" alt="" />
+              <h3 class="reaction-name">Reaction</h3>
+            </div>
+            <p>80 <span>/ 100</span></p>
+          </li>
+          <li class="memory-item">
+            <div class="item-container">
+              <img src="/assets/images/icon-memory.svg" alt="" />
+              <h3 class="memory-name">Memory</h3>
+            </div>
+            <p>92 <span>/ 100</span></p>
+          </li>
+          <li class="verbal-item">
+            <div class="item-container">
+              <img src="/assets/images/icon-verbal.svg" alt="" />
+              <h3 class="verbal-name">Verbal</h3>
+            </div>
+            <p>61 <span>/ 100</span></p>
+          </li>
+          <li class="visual-item">
+            <div class="item-container">
+              <img src="/assets/images/icon-visual.svg" alt="" />
+              <h3 class="visual-name">Visual</h3>
+            </div>
+            <p>72 <span>/ 100</span></p>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="continuebutton">Continue</button>
+    </body>
+    <!-- Here it finishes. -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">César Morán</a>.
+    </div>
+  </body>
+</html>
