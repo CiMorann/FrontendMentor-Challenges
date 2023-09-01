@@ -141,7 +141,7 @@ ul li {
 
 .verbal-item {
     background-color: hsla(166, 100%, 37%, 0.1);
-    padding: 15px;
+    padding: 12px;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -154,7 +154,7 @@ ul li {
 
 .visual-item {
     background-color: hsla(234, 85%, 45%, 0.1);
-    padding: 15px;
+    padding: 12px;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -176,6 +176,11 @@ ul li {
     background-color: hsl(224, 30%, 27%);
 }
 
+.continuebutton:hover {
+    background-image: linear-gradient(to bottom, #7857ff, #694cf9, #5941f4, #4536ee, #2b2be9);
+    cursor: pointer;
+}
+
 
 /* Responsive after Mobile First */
 
@@ -183,6 +188,7 @@ ul li {
     body {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     .side-container {
@@ -190,7 +196,10 @@ ul li {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        background-color: red;
+        -webkit-box-shadow: 19px 24px 38px -22px rgba(0,0,0,0.35);
+-moz-box-shadow: 19px 24px 38px -22px rgba(0,0,0,0.35);
+box-shadow: 19px 24px 38px -22px rgba(0,0,0,0.35);
+border-radius: 30px;
     }
 
     /* Left-side container */
@@ -231,7 +240,82 @@ ul li {
     }
     .summary {
         margin: -20px;
-        padding: 30px;
+        padding: 50px;
+        border-radius: 0px 30px 30px 0px;
+-moz-border-radius: 0px 30px 30px 0px;
+-webkit-border-radius: 0px 30px 30px 0px;
+border: 0px solid #000000;
+    }
+
+    .item-container {
+        margin-right: 80px;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 768px ) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .side-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        -webkit-box-shadow: 19px 24px 38px -22px rgba(0,0,0,0.35);
+-moz-box-shadow: 19px 24px 38px -22px rgba(0,0,0,0.35);
+box-shadow: 19px 24px 38px -22px rgba(0,0,0,0.35);
+border-radius: 30px;
+    }
+
+    /* Left-side container */
+
+    .header-container{
+        border-radius: 30px;
+        width: 350px;
+    }
+
+    .result {
+        margin: 30px;
+        opacity: 0.8;
+        font-size: 0.70rem;
+    }
+
+    .youscored {
+        text-align: center;
+        width: 65%;
+    }
+
+    .great {
+        margin-top: 25px;
+        font-size: 2rem;
+    }
+
+    .continuebutton {
+        width: 100%;
+    }
+
+    /* Right-side Container. */
+
+    ul {
+        margin-top: 20px;
+    }
+
+    .summary h2{
+        margin-bottom: 5px;
+    }
+    .summary {
+        margin: -20px;
+        padding: 50px;
+        border-radius: 0px 30px 30px 0px;
+-moz-border-radius: 0px 30px 30px 0px;
+-webkit-border-radius: 0px 30px 30px 0px;
+border: 0px solid #000000;
     }
 
     .item-container {
